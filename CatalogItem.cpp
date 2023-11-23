@@ -1,25 +1,25 @@
-#ifndef CATALOG_H
-#define CATALOG_H
+// #ifndef CATALOG_H
+// #define CATALOG_H
 
-//define a catalog_item structure
-struct catalog_item{
-	int	code;
-	char	description[50];
-	int 	num_pieces;
-	float	retail_price;
-	struct catalog_item * next;
-};
+// //define a catalog_item structure
+// struct catalog_item{
+// 	int	code;
+// 	char	description[50];
+// 	int 	num_pieces;
+// 	float	retail_price;
+// 	struct catalog_item * next;
+// };
 
-//function prototypes
-struct catalog_item * make_catalog_item( int code, char desc[50], 
-	int num_pieces, float price ); 
+// //function prototypes
+// struct catalog_item * make_catalog_item( int code, char desc[50], 
+// 	int num_pieces, float price ); 
 
-void show_catalog_item(struct catalog_item *);
+// void show_catalog_item(struct catalog_item *);
 
-struct catalog_item * get_catalog_item();
+// struct catalog_item * get_catalog_item();
 
 
-#endif
+// #endif
 
 
 #ifndef CATALOG_H
@@ -42,8 +42,8 @@ public:
 
     // Display function
     void showCatalogItem() const {
-        std::cout << "Code: " << code << "\nDescription: " << description
-                  << "\nNumber of Pieces: " << num_pieces << "\nRetail Price: " << retail_price << std::endl;
+        // std::cout << "Code: " << code << "\nDescription: " << description
+        //           << "\nNumber of Pieces: " << num_pieces << "\nRetail Price: " << retail_price << std::endl;
     }
 
     // Getter functions
