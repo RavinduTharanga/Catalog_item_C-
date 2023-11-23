@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "catalog.h"
+#include "CatalogItem.h"
 
 /*
  * creates a new catalog_item structure

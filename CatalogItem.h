@@ -22,8 +22,8 @@
 // #endif
 
 
-#ifndef CATALOG_H
-#define CATALOG_H
+#ifndef CATALOGITEM_H
+#define CATALOG
 
 #include <string>
 
