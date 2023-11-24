@@ -22,42 +22,27 @@
 // #endif
 
 
-#ifndef CATALOGITEM_H
-#define CATALOG
+#ifndef CATALOG_H
+#define CATALOG_H
 
 #include <string>
 
 class CatalogItem {
-private:
-    int code;
-    std::string description; // Using std::string for ease of use
-    int num_pieces;
-    float retail_price;
-    CatalogItem* next;
+    private:
+        int code;
+        std::string description;
+        int numPieces;
+        float retailPrice;
 
-public:
-    // Constructor
-    CatalogItem(int code, std::string desc, int num_pieces, float price)
-        : code(code), description(desc), num_pieces(num_pieces), retail_price(price), next(nullptr) {}
+    public:
+        // Constructor
+        CatalogItem(int code, std::string desc, int numPieces, float price);
 
-    // Display function
-    void showCatalogItem() const {
-        // std::cout << "Code: " << code << "\nDescription: " << description
-        //           << "\nNumber of Pieces: " << num_pieces << "\nRetail Price: " << retail_price << std::endl;
-    }
+        // Display method
+        void show() const;
 
-    // Getter functions
-    int getCode() const { return code; }
-    std::string getDescription() const { return description; }
-    int getNumPieces() const { return num_pieces; }
-    float getRetailPrice() const { return retail_price; }
-    CatalogItem* getNext() const { return next; }
-
-    // Setter functions
-    void setNext(CatalogItem* nextItem) { next = nextItem; }
-
-    // Additional functions can be added as per requirement
+        // Static method to get a new catalog item from user input
+        static CatalogItem* getCatalogItem();
 };
 
-#endif // CATALOG_H
-
+#endif
