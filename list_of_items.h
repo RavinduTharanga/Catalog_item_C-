@@ -21,7 +21,7 @@
 #ifndef LIST_OF_ITEMS_H
 #define LIST_OF_ITEMS_H
 
-#include "catalog.h"
+#include "CatalogItem.h"
 #include <vector>
 
 class ListOfItems {

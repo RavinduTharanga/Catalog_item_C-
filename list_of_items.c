@@ -82,7 +82,7 @@
 
 
 #include "list_of_items.h"
-#include <iostream>
+//#include <iostream>
 
 // Add an item to the list
 bool ListOfItems::addItem(CatalogItem* newItem) {
